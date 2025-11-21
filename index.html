@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethereum Average Entry Price Calculator</title>
+  <meta name="description" content="Free Ethereum average entry price calculator. Simple, fast, no registration needed.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ethereum Average Entry Price Calculator</h1>
+    <p>Enter price and amount for each purchase → click "Calculate"</p>
+
+    <div class="input-group">
+      <label>Entry Price ($):</label>
+      <input type="number" id="price" step="0.01" placeholder="e.g. 3000">
+    </div>
+
+    <div class="input-group">
+      <label>Amount ($):</label>
+      <input type="number" id="amount" step="0.01" placeholder="e.g. 1000">
+    </div>
+
+    <div class="buttons">
+      <button onclick="addPurchase()">Add Purchase</button>
+      <button onclick="calculate()">Calculate</button>
+      <button onclick="clearAll()">Clear</button>
+    </div>
+
+    <div id="purchases-list"></div>
+    <div id="result"></div>
+
+    <div class="hint">
+      💡 Tip: Works for Ethereum (ETH) and other assets.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
