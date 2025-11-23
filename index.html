@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ethereum Average Entry Price Calculator</title>
-  <meta name="description" content="Free Ethereum average entry price calculator. Simple, fast, no registration needed.">
+  <title>Калькулятор средней цены входа</title>
+  <meta name="description" content="Бесплатный калькулятор средней цены входа в Ethereum. Простой, быстрый, без регистрации.">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Ethereum Average Entry Price Calculator</h1>
-    <p>Enter price and amount for each purchase → click "Calculate"</p>
+    <h1>Калькулятор средней цены входа</h1>
+    <p>Введите цену и сумму каждой покупки → нажмите «Рассчитать»</p>
 
     <div class="input-group">
-      <label>Entry Price ($):</label>
-      <input type="number" id="price" step="0.01" placeholder="e.g. 3000">
+      <label>Цена входа ($):</label>
+      <input type="number" id="price" step="0.01" placeholder="Например: 3000">
     </div>
 
     <div class="input-group">
-      <label>Amount ($):</label>
-      <input type="number" id="amount" step="0.01" placeholder="e.g. 1000">
+      <label>Сумма ($):</label>
+      <input type="number" id="amount" step="0.01" placeholder="Например: 1000">
     </div>
 
     <div class="buttons">
-      <button onclick="addPurchase()">Add Purchase</button>
-      <button onclick="calculate()">Calculate</button>
-      <button onclick="clearAll()">Clear</button>
+      <button onclick="addPurchase()">Добавить покупку</button>
+      <button onclick="calculate()">Рассчитать</button>
+      <button onclick="clearAll()">Очистить</button>
     </div>
 
     <div id="purchases-list"></div>
     <div id="result"></div>
 
     <div class="hint">
-      💡 Tip: Works for Ethereum (ETH) and other assets.
+      💡 Подсказка: Работает для Ethereum (ETH) и других активов.
     </div>
   </div>
 
